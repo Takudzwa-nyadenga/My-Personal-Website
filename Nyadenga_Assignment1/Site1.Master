@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Nyadenga_Assignment1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Site.css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 783px;
+        }
+        .auto-style2 {
+            height: 65px;
+        }
+        .auto-style3 {
+            height: 619px;
+        }
+        .auto-style6 {
+            height: 93px;
+        }
+        .auto-style7 {
+            width: 100%;
+        }
+        .auto-style9 {
+            width: 330px;
+            height: 26px;
+            text-align: center;
+        }
+        .auto-style10 {
+            width: 375px;
+            height: 26px;
+            text-align: center;
+        }
+        .auto-style11 {
+            height: 26px;
+            text-align: center;
+        }
+        .auto-style14 {
+            width: 335px;
+            height: 26px;
+            text-align: center;
+        }
+        .auto-style16 {
+            width: 121px;
+            height: 119px;
+        }
+        .auto-style17 {
+            width: 752px;
+            text-align: right;
+        }
+        .auto-style18 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body bgcolor="#800000">
+    <form id="form1" runat="server">
+        <div>
+        
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <table class="auto-style7">
+                            <tr>
+                                <td bgcolor="white" class="auto-style14">
+                                    <img alt="My LOGO" class="auto-style16" src="Images/SmallSquareLogoJpg%20(1).jpg" /></td>
+                                <td bgcolor="white" class="auto-style9">
+                                    <asp:HyperLink ID="hlHome" runat="server" ForeColor="Maroon" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+                                </td>
+                                <td bgcolor="white" class="auto-style10">
+                                    <asp:HyperLink ID="hlProducer" runat="server" ForeColor="Maroon" NavigateUrl="~/ProducerLife.aspx">Producer Life</asp:HyperLink>
+                                </td>
+                                <td bgcolor="white" class="auto-style11">
+                                    <asp:HyperLink ID="hlFutureLife" runat="server" ForeColor="Maroon" NavigateUrl="~/FutureLife.aspx">Future Life</asp:HyperLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor= "white"class="auto-style3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6">
+                        <table class="auto-style7">
+                            <tr>
+                                <td class="auto-style17">
+                                    <asp:ImageButton ID="ibLinkedin" runat="server" Height="106px" Width="92px" ImageUrl="~/Images/png-transparent-white-in-text-on-black-background-black-and-white-point-angle-pattern-linkedin-texture-white-text.png" OnClick="ibLinkedin_Click" />
+                                </td>
+                                <td class="auto-style18">
+                                    <asp:ImageButton ID="ibYoutube" runat="server" Height="106px" ImageUrl="~/Images/youtube-white-logo-transparent-11549681035f4gwrxowts.png" Width="92px" OnClick="ibYoutube_Click" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        
+        </div>
+    </form>
+</body>
+</html>
